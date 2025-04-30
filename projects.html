@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body class="fade-out">
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="Code.html">Code's</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="intro">
+    <h2>My Projects</h2>
+    <p>Explore my work below!</p>
+</section>
+
+<div class="projects-container">
+    <div class="project project-portfolio" id="project1">
+        <img src="recipe.png" alt="Project 1">
+        <p>This code is designed for a portfolio projects page. It showcases various projects with images and descriptions, allowing users to explore the creator's work. The page features a navigation bar for easy access to different sections of the portfolio, and it includes smooth transitions for project visibility as the user scrolls. Additionally, the footer is programmed to appear only when the user scrolls to the bottom of the page, enhancing the overall user experience. This setup is ideal for presenting a collection of projects in a visually appealing and interactive manner.</p>
+    </div>
+    <div class="project project-arcane" id="project2">
+        <img src="Arcane.jpeg" alt="Project 2">
+        <p>This code is designed for a one-page website dedicated to the animated series Arcane, set in the universe of the popular video game League of Legends. The page includes a navigation menu that allows users to jump to different sections, such as an overview, key information, cast and creative team, characters, and reviews.
+            <br><br>
+            Key features of the code include:
+            <br><br>
+            Navigation Bar: Provides links to various sections of the page for easy access.
+            <br><br>
+            Header: Displays the title of the series and a button to watch it on Netflix.
+            <br><br>
+            Content Sections: Each section presents detailed information about the series, including its overview, key details, cast, characters, and critical reviews.
+            <br><br>
+            Responsive Design: The use of the viewport meta tag ensures the website is mobile-friendly.
+            This setup is ideal for promoting the series and providing viewers with essential information in a structured and visually appealing format.</p>
+    </div>
+    <div class="project project-nature" id="project3">
+        <img src="nature.jpeg" alt="Project 3">
+        <p>This code is designed for a nature photography showcase webpage. It displays a series of nature images, each accompanied by a description in the form of a copyright notice. The page features multiple sections, each containing an image of a serene landscape, such as forests, mountains, and beaches, along with a brief copyright statement indicating ownership and licensing under Creative Commons.
+            <br><br>
+            Key features of the code include:
+            <br><br>
+            Image Display: Each image is presented with an alt attribute for accessibility and a title for additional context.
+            <br><br>
+            Copyright Information: The descriptions provide legal information regarding the use of the images, ensuring proper attribution and licensing.
+            <br><br>
+            This setup is ideal for showcasing nature photography while providing essential information about image rights and usage.</p>
+    </div>
+    <div class="project project-digifest" id="project4">
+        <img src="digifest.jpeg" alt="Project 4">
+        <p>This code is designed for a Digi Fest event webpage that highlights a celebration of digital technology in Cardiff. The page includes a navigation menu for easy access to different sections, such as a welcome message, event lineup, and contact information.
+            <br><br>
+            Key features of the code include:
+            <br><br>
+            Header: Displays the title of the event, "Digi Fest."
+            <br><br>
+            Navigation Bar: Provides links to various sections of the page, enhancing user navigation.
+            <br><br>
+            Main Content:
+            The Welcome section introduces the event and its theme of collaboration, inviting attendees to learn about innovative projects in the city.
+            The Line Up section features images related to the event, showcasing the activities or performances planned.
+            <br><br>
+            Footer: Contains copyright information, ensuring legal protection for the event's content.
+            This setup is ideal for promoting the Digi Fest event, providing essential information and engaging visuals to attract attendees.</p>
+    </div>
+    <div class="project project-ah" id="project5">
+        <img src="ah.jpeg" alt="Project 5">
+        <p>This code represents a simple webpage designed to embed a YouTube video. It provides a straightforward layout that allows users to view a specific video directly on the page, enhancing accessibility and user engagement.</p><br>
+<p>Key features of this code include video embedding, which allows users to watch the video without leaving the webpage, providing a seamless viewing experience.</p><br>
+<p>The page is styled to be visually appealing and user-friendly, with a responsive video container that adjusts its width to fit various screen sizes while maintaining a maximum width for larger displays.</p><br>
+<p>The webpage includes a header with a title and a brief message encouraging users to enjoy the video, creating a welcoming atmosphere for visitors.</p><br>
+<p>Overall, this code serves as a basic template for embedding video content, making it suitable for personal projects, tutorials, or any webpage where video presentation is essential.</p>
+
+    </div>
+    <div class="project project-petrol" id="project6">
+        <img src="petrol.jpeg" alt="Project 6">
+        <p>This code represents a simple **Petrol Calculator** web application that allows users to calculate the total cost of petrol based on the price per liter and the number of liters purchased.</p><br>
+        <p>Key features of this application include a user-friendly interface with input fields for the cost of petrol per liter and the number of liters purchased, enabling quick calculations.</p><br>
+        <p>The layout is styled with CSS to create a clean and modern appearance, featuring a centered container that enhances usability and accessibility.</p><br>
+        <p>The JavaScript function calculates the total cost when the user clicks the "Calculate Total Cost" button, dynamically updating the displayed result on the page.</p><br>
+        <p>Overall, this code serves as a practical tool for users looking to determine their petrol expenses efficiently, making it suitable for personal use or educational purposes.</p>
+        </p>
+    </div>
+</div>
+
+<footer class="footer" id="footer">
+    <p>© 2025 Qazi Arham. All rights reserved.</p>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Make the body visible once the DOM is ready
+        document.body.classList.add("fade-out");
+
+        const links = document.querySelectorAll("a[href]");
+
+        links.forEach(link => {
+            const href = link.getAttribute("href");
+            if (href.startsWith("http") || href.startsWith("#") || link.target === "_blank") return;
+
+            link.addEventListener("click", function(e) {
+                e.preventDefault();
+                const targetUrl = this.href;
+
+                document.body.classList.remove("fade-out");
+                document.body.classList.add("fade");
+
+                setTimeout(() => {
+                    window.location.href = targetUrl;
+                }, 500);
+            });
+        });
+    });
+
+    document.addEventListener('scroll', function() {
+        const projects = document.querySelectorAll('.project');
+        const scrollPosition = window.scrollY + window.innerHeight;
+
+        projects.forEach(project => {
+            const projectPosition = project.getBoundingClientRect().top + window.scrollY;
+
+            if (scrollPosition > projectPosition + 100) {
+                project.style.opacity = 1;
+                project.style.transform = 'translateY(0)';
+            }
+        });
+
+        // Show footer only when scrolled to the bottom
+        const footer = document.getElementById('footer');
+        const documentHeight = document.documentElement.scrollHeight;
+        const windowHeight = window.innerHeight;
+
+        if (scrollPosition >= documentHeight - windowHeight) {
+            footer.style.display = 'block'; // Show footer
+        } else {
+            footer.style.display = 'none'; // Hide footer
+        }
+    });
+</script>
+
+</body>
+</html>

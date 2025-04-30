@@ -1,0 +1,118 @@
+/* ========== GLOBAL STYLES ========== */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 215, 0); /* Gold */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body.fade-out {
+    opacity: 1;
+}
+
+/* Navigation bar */
+nav {
+    background-color: rgb(0, 0, 218);
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    color: rgb(255, 215, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive nav */
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+/* ========== MAIN CONTENT ========== */
+.intro {
+    text-align: center;
+    margin: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 0 15px;
+}
+
+h2 {
+    color: rgb(0, 0, 218); /* Same blue as the text color */
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    gap: 30px;
+}
+
+.project {
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+/* ========== FOOTER ========== */
+.footer {
+    display: none; /* Show it when needed dynamically */
+    text-align: center;
+    background-color: rgb(0, 0, 218);
+    color: rgb(255, 215, 0);
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+/* ========== TEXT STYLING ========== */
+p {
+    color: rgb(0, 0, 218);
+    text-align: center;
+    padding: 0 15px;
+}

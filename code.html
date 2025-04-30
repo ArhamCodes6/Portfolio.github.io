@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codes</title>
+  <link rel="stylesheet" href="code.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Sticky top project links -->
+<div style="position: sticky; top: 0px; background: white; padding: 10px; z-index: 1000; text-align: center;">
+    <a href="#project1" style="margin-right: 10px; color: rgb(0, 0, 218);">Project 1</a>
+    <a href="#project2" style="margin-right: 10px; color: rgb(0, 0, 218);">Project 2</a>
+    <a href="#project3" style="margin-right: 10px; color: rgb(0, 0, 218);">Project 3</a>
+    <a href="#project4" style="margin-right: 10px; color: rgb(0, 0, 218);">Project 4</a>
+    <a href="#project5" style="margin-right: 10px; color: rgb(0, 0, 218);">Project 5</a>
+    <a href="#project6" style="margin-right: 10px; color: rgb(0, 0, 218);">Project 6</a>
+  </div>
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="code.html">Code's</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<h1 id="project1">Project - 1: Recipe</h1>
+    <h2>HTML CODE</h2>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Risotto Recipe&lt;/title&gt;
+    &lt;link rel="stylesheet" type="text/css" href="chapter1.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Risotto&lt;/h1&gt;
+    &lt;p&gt;This creamy and flavorful risotto is a classic Italian dish...&lt;/p&gt;
+    &lt;h2&gt;Ingredients&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;1 cup Arborio rice&lt;/li&gt;
+        &lt;li&gt;4 cups chicken or vegetable stock&lt;/li&gt;
+        &lt;li&gt;1 small onion, finely chopped&lt;/li&gt;
+        &lt;li&gt;2 cloves garlic, minced&lt;/li&gt;
+        &lt;li&gt;1/2 cup dry white wine&lt;/li&gt;
+        &lt;li&gt;1/2 cup grated Parmesan cheese&lt;/li&gt;
+        &lt;li&gt;2 tablespoons olive oil&lt;/li&gt;
+        &lt;li&gt;2 tablespoons butter&lt;/li&gt;
+        &lt;li&gt;Salt and pepper to taste&lt;/li&gt;
+        &lt;li&gt;Optional: mushrooms, peas, or other vegetables&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h2&gt;Method&lt;/h2&gt;
+    &lt;ol&gt;
+        &lt;li&gt;Heat the stock...&lt;/li&gt;
+        &lt;li&gt;In a large pan...&lt;/li&gt;
+        &lt;!-- Add all other steps here --&gt;
+    &lt;/ol&gt;
+    &lt;p&gt;To watch the video, click &lt;a href="https://www.youtube.com/watch?v=NKtR3KpS83w"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+    <h2>CSS CODE</h2>
+    <pre><code>body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #34495e;
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 5px;
+}
+
+p {
+    margin: 15px 20px;
+    font-size: 1.1em;
+}
+
+ul, ol {
+    margin: 15px 40px;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul li::marker {
+    color: #e74c3c;
+}
+
+ol li::marker {
+    color: #3498db;
+}
+</code></pre>
+
+<h1 id="project2">Project - 2: Arcane</h1>
+    <h2>HTML CODE</h2>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Arcane - One Page Website&lt;/title&gt;
+    &lt;link rel="stylesheet" href="chapter2.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#overview"&gt;Overview&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#key-info"&gt;Key Information&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#cast"&gt;Cast & Creative Team&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#characters"&gt;Characters&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#reviews"&gt;Reviews&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+
+    &lt;header&gt;
+        &lt;h1&gt;Arcane&lt;/h1&gt;
+        &lt;a href="https://www.netflix.com/title/81435684" class="button" target="_blank"&gt;Watch Now&lt;/a&gt;
+    &lt;/header&gt;
+
+    &lt;section id="overview"&gt;
+        &lt;h2&gt;Overview&lt;/h2&gt;
+        &lt;p&gt;&lt;strong&gt;Arcane&lt;/strong&gt; is an animated series...&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section id="key-info"&gt;
+        &lt;h2&gt;Key Information&lt;/h2&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;strong&gt;Genre:&lt;/strong&gt; Animation, Action, Adventure&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;Release Date:&lt;/strong&gt; November 6, 2021&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;Seasons:&lt;/strong&gt; 1 (Season 2 confirmed)&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;Episodes:&lt;/strong&gt; 9&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/section&gt;
+
+    &lt;section id="cast"&gt;
+        &lt;h2&gt;Cast & Creative Team&lt;/h2&gt;
+        &lt;p&gt;&lt;strong&gt;Creators:&lt;/strong&gt; Christian Linke, Alex Yee&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Hailee Steinfeld as Vi&lt;/li&gt;
+            &lt;li&gt;Ella Purnell as Jinx&lt;/li&gt;
+            &lt;li&gt;Kevin Alejandro as Jayce&lt;/li&gt;
+            &lt;li&gt;Jason Spisak as Silco&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/section&gt;
+
+    &lt;section id="characters"&gt;
+        &lt;h2&gt;Characters&lt;/h2&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;strong&gt;Vi:&lt;/strong&gt; A fierce fighter.&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;Jinx:&lt;/strong&gt; A chaotic criminal.&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;Jayce:&lt;/strong&gt; A brilliant inventor.&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;Silco:&lt;/strong&gt; A cunning antagonist.&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/section&gt;
+
+    &lt;section id="reviews"&gt;
+        &lt;h2&gt;Reviews&lt;/h2&gt;
+        &lt;p&gt;Arcane received critical acclaim with a 100% score on Rotten Tomatoes.&lt;/p&gt;
+    &lt;/section&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+    <h2>CSS CODE</h2>
+    <pre><code>body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #6c63ff;
+}
+
+.button {
+    background: #6c63ff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+</code></pre>
+
+<h1 id="project3">Project - 3: Nature Images</h1>
+    <h2>HTML CODE</h2>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;title&gt;Nature Images&lt;/title&gt;
+    &lt;link rel="stylesheet" href="chapter3.css" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="image-container"&gt;
+        &lt;img src="trees.jpeg" alt="Serene forest" width="300" height="200" title="Forest" class="filtered-image" /&gt;
+        &lt;p&gt;© 2025 Nature Photography. Creative Commons licensed.&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class="image-container"&gt;
+        &lt;img src="landscape.jpeg" alt="Mountain landscape" width="300" height="200" title="Mountains" class="filtered-image" /&gt;
+        &lt;p&gt;© 2025 Nature Photography. Creative Commons licensed.&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class="image-container"&gt;
+        &lt;img src="beach.jpeg" alt="Tranquil beach" width="300" height="200" title="Beach" class="filtered-image" /&gt;
+        &lt;p&gt;© 2025 Nature Photography. Creative Commons licensed.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+</code></pre>
+
+<h2>CSS CODE</h2>
+<pre><code>body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.image-container {
+    margin: 15px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 320px; 
+}
+
+.filtered-image {
+    width: 100%;
+    height: auto;
+    filter: brightness(0.9) contrast(1.1) saturate(1.2);
+    transition: transform 0.3s;
+}
+
+.filtered-image:hover {
+    transform: scale(1.05);
+}
+
+</code></pre>
+
+<h1 id="project4">Project - 4: Digi Fest</h1>
+<h2>HTML CODE</h2>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;link rel="stylesheet" href="chapter4.css" type="text/css" /&gt;
+    &lt;title&gt;Digi Fest&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Digi Fest&lt;/h1&gt;
+    &lt;/header&gt;
+
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#welcome"&gt;Welcome&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#lineup"&gt;Line Up&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+
+    &lt;main&gt;
+        &lt;section id="welcome"&gt;
+            &lt;h2&gt;Welcome&lt;/h2&gt;
+            &lt;p&gt;Digi Fest is a celebration of digital and technology in the city of Cardiff. This year, we are celebrating ‘collaboration’, so come and find out about the latest collaborations that are happening in this historic and innovative city. They promise an educational and inspirational packed programme for all.&lt;/p&gt;
+        &lt;/section&gt;
+
+        &lt;section id="lineup"&gt;
+            &lt;h2&gt;Line Up&lt;/h2&gt;
+            &lt;div class="image-container"&gt;
+                &lt;img src="digi fest 1.png" alt="Event Image 1" title="Event 1" /&gt;
+                &lt;img src="digi fest 2.jpeg" alt="Event Image 2" title="Event 2" /&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&copy; 2025 Digi Fest. All rights reserved.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>CSS CODE</h2>
+<pre><code>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #17072b;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #172d67;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #8c15e9;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+}
+
+</code></pre>
+
+<h1 id="project5">Project - 5: Embed YouTube Video</h1>
+<h2>HTML CODE WITH INTERNAL CSS</h2>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Embed Video Example&lt;/title&gt;
+    <h2>/* CSS CODE */</h2>
+    &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .video-container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 640px;
+            width: 100%;
+        }
+        iframe {
+            width: 100%;
+            height: 480px;
+        }
+        p {
+            color: #666;
+            margin-top: 10px;
+            text-align: center;
+        }
+    &lt;/style&gt; <h2>/* CSS CODE END */</h2>
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;My YouTube Video&lt;/h1&gt;
+    &lt;div class="video-container"&gt;
+        &lt;iframe src="https://www.youtube.com/embed/KOaeDHeJ80I?loop=1&amp;playlist=KOaeDHeJ80I" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+    &lt;p&gt;Enjoy the video!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h1 id="project6">Project - 6: Petrol Calculator</h1>
+<h2>HTML + CSS + JavaScript CODE</h2>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Petrol Calculator&lt;/title&gt;
+    &lt;style&gt;
+<h2>/* CSS CODE */</h2>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input[type="number"]:focus {
+            border-color: #007BFF;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Petrol Calculator&lt;/h1&gt;
+    &lt;div class="container"&gt;
+        &lt;label for="costPerLiter"&gt;Cost of Petrol per Liter:&lt;/label&gt;
+        &lt;input type="number" id="costPerLiter" value="1.72" step="0.01"&gt;
+
+        &lt;label for="litersPurchased"&gt;Number of Liters Purchased:&lt;/label&gt;
+        &lt;input type="number" id="litersPurchased" value="0" step="0.01"&gt;
+
+        &lt;button onclick="calculateTotal()"&gt;Calculate Total Cost&lt;/button&gt;
+
+        &lt;p id="totalCost"&gt;Total Cost: $0.00&lt;/p&gt;
+    &lt;/div&gt;
+    <h2>// JAVASCRIPT CODE</h2>
+    &lt;script&gt;
+        function calculateTotal() {
+            const costPerLiter = parseFloat(document.getElementById('costPerLiter').value);
+            const litersPurchased = parseFloat(document.getElementById('litersPurchased').value);
+            
+            const totalCost = costPerLiter * litersPurchased;
+
+            document.getElementById('totalCost').textContent = `Total Cost: $${totalCost.toFixed(2)}`;
+        }
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.body.classList.add("fade-out");
+
+            const links = document.querySelectorAll("a[href]");
+
+            links.forEach(link => {
+                const href = link.getAttribute("href");
+                if (href.startsWith("http") || href.startsWith("#") || link.target === "_blank") return;
+
+                link.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    const targetUrl = this.href;
+                    document.body.classList.remove("fade-out");
+                    document.body.classList.add("fade");
+
+                    setTimeout(() => {
+                        window.location.href = targetUrl;
+                    }, 500);
+                });
+            });
+
+            document.body.classList.remove("fade-out");
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2025 Qazi Arham. All rights reserved.</p>
+    </footer>
+</body>
+</html>

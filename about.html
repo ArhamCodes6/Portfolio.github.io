@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Qazi Arham</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body class="fade-out">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="Code.html">Code's</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>About Me</h1>
+        </header>
+        <section class="about-content">
+            <p>Hi, I'm <strong>Qazi Arham</strong>, a 19-year-old creative computing student at Bath Spa University.</p>
+            <p>I'm currently pursuing a degree in Creative Computing, where I explore the intersection of technology and creativity.</p>
+            <p>This portfolio website showcases my projects, skills, and interests in creative computing, gaming, and design.</p>
+            <p>In my free time, I enjoy playing games, engaging in outdoor sports, and reading comic books.</p>
+            <p>I aim to combine my passion for technology and design to create innovative solutions in the digital space.</p>
+            <p>Feel free to browse my projects and reach out if you'd like to collaborate!</p>
+        </section>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Qazi Arham. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll('nav ul li a');
+        
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetUrl = this.getAttribute('href');
+        
+                    document.body.classList.add('fade-out');
+                    setTimeout(() => {
+                        window.location.href = targetUrl;
+                    }, 500);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

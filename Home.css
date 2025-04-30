@@ -1,0 +1,116 @@
+/* ========== GLOBAL STYLES ========== */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 215, 0); /* Gold */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body.fade-out {
+    opacity: 1;
+}
+
+/* ========== HEADER & NAVIGATION ========== */
+header {
+    background-color: rgb(0, 0, 218);
+}
+
+nav {
+    background-color: rgb(0, 0, 218); /* Solid blue navbar */
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    color: rgb(255, 215, 0); /* Gold text */
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ========== INTRO SECTION ========== */
+.intro {
+    text-align: center;
+    margin: 20px;
+    color: rgb(0, 0, 218);
+    font-size: 24px;
+}
+
+/* ========== IMAGE CONTAINER ========== */
+.image-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center;
+    gap: 20px; /* Space between items */
+    margin: 20px auto;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ========== INDIVIDUAL IMAGE BOX ========== */
+.recipe, .arcane {
+    flex: 1 1 300px; /* Flexible sizing */
+    max-width: 600px;
+    animation: pop-up 0.6s forwards;
+}
+
+.recipe {
+    animation-delay: 0.2s;
+}
+
+.arcane {
+    animation-delay: 0.4s;
+}
+
+@keyframes pop-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========== RESPONSIVE IMAGES ========== */
+.recipe img, .arcane img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+.recipe img:hover, .arcane img:hover {
+    transform: scale(1.05);
+}
+
+/* ========== FOOTER ========== */
+.footer {
+    text-align: center;
+    background-color: rgb(0, 0, 218);
+    color: rgb(255, 215, 0);
+    padding: 10px 0;
+    margin-top: auto;
+}

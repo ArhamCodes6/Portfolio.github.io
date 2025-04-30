@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="code.html">Code's</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="intro">
+    <h2>Welcome</h2>
+    <p>Explore the intersection of technology and creativity.</p>
+    <p>My Best Work</p>
+</section>
+
+<section class="image-container">
+    <div class="recipe">
+        <img src="recipe.png" alt="Recipe App" style="width: 550px; height: 350px;"> <!-- First image -->
+    </div>
+
+    <div class="arcane">
+        <img src="Arcane.jpeg" alt="Arcane App" style="width: 600px; height: 350px;"> <!-- Second image -->
+    </div>
+</section>
+
+
+<footer class ="footer">
+    <p>© 2025 Qazi Arham. All rights reserved.</p>
+</footer>
+<!-- Javascript for transition -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Make the body visible once the DOM is ready
+        document.body.classList.add("fade-out");
+
+        const links = document.querySelectorAll("a[href]");
+
+        links.forEach(link => {
+            // Prevent transition on external links or anchor links
+            const href = link.getAttribute("href");
+            if (href.startsWith("http") || href.startsWith("#") || link.target === "_blank") return;
+
+            link.addEventListener("click", function(e) {
+                e.preventDefault();
+                const targetUrl = this.href;
+
+                // Start fade animation
+                document.body.classList.remove("fade-out");
+                document.body.classList.add("fade");
+
+                // Delay navigation until after animation
+                setTimeout(() => {
+                    window.location.href = targetUrl;
+                }, 500); // Match the CSS transition duration
+            });
+        });
+    });
+</script>
+
+
+</body>
+</html>
