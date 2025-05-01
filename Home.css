@@ -114,3 +114,40 @@ nav ul li a:hover {
     padding: 10px 0;
     margin-top: auto;
 }
+
+@media (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    nav ul li a {
+        padding: 12px;
+    }
+
+    .intro {
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    .image-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .recipe, .arcane {
+        max-width: 100%;
+        flex: 1 1 auto;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+}
