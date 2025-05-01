@@ -1,55 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="Home.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Home</title>
+    <link rel="stylesheet" href="Home.css" />
+    <style>
+        nav ul li a.active {
+            border-bottom: 3px solid rgb(255, 215, 0); /* Gold underline */
+            font-weight: bold;
+        }
+    </style>
 </head>
-<body>
+<body class="fade-out">
 
 <header>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="code.html">Code's</a></li>
+            <li><a href="Code.html">Code's</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="About.html">About</a></li>
         </ul>
     </nav>
 </header>
 
 <section class="intro">
-    <h2>Welcome</h2>
-    <p>Explore the intersection of technology and creativity.</p>
-    <p>My Best Work</p>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Discover my work, projects, and more.</p>
 </section>
 
-<section class="image-container">
-    <div class="recipe">
-        <img src="recipe.png" alt="Recipe App" style="width: 550px; height: 350px;"> <!-- First image -->
-    </div>
+<main>
+    <section class="image-container">
+        <div class="recipe">
+            <img src="recipe.png" alt="Recipe App"> <!-- First image -->
+        </div>
+    
+        <div class="arcane">
+            <img src="Arcane.jpeg" alt="Arcane App"> <!-- Second image -->
+        </div>
+    </section>
+    
+</main>
 
-    <div class="arcane">
-        <img src="Arcane.jpeg" alt="Arcane App" style="width: 600px; height: 350px;"> <!-- Second image -->
-    </div>
-</section>
-
-
-<footer class ="footer">
+<footer class="footer" id="footer">
     <p>© 2025 Qazi Arham. All rights reserved.</p>
 </footer>
-<!-- Javascript for transition -->
+
 <script>
     document.addEventListener("DOMContentLoaded", () => {
-        // Make the body visible once the DOM is ready
         document.body.classList.add("fade-out");
 
-        const links = document.querySelectorAll("a[href]");
+        // Highlight current nav item
+        const currentPage = window.location.pathname.split("/").pop();
+        document.querySelectorAll("nav ul li a").forEach(link => {
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add("active");
+            }
+        });
 
+        // Smooth transition for internal links
+        const links = document.querySelectorAll("a[href]");
         links.forEach(link => {
-            // Prevent transition on external links or anchor links
             const href = link.getAttribute("href");
             if (href.startsWith("http") || href.startsWith("#") || link.target === "_blank") return;
 
@@ -57,19 +70,30 @@
                 e.preventDefault();
                 const targetUrl = this.href;
 
-                // Start fade animation
                 document.body.classList.remove("fade-out");
                 document.body.classList.add("fade");
 
-                // Delay navigation until after animation
                 setTimeout(() => {
                     window.location.href = targetUrl;
-                }, 500); // Match the CSS transition duration
+                }, 500);
             });
         });
     });
-</script>
 
+    // Footer reveal logic (optional)
+    document.addEventListener('scroll', function () {
+        const footer = document.getElementById('footer');
+        const scrollPosition = window.scrollY + window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+        const windowHeight = window.innerHeight;
+
+        if (scrollPosition >= documentHeight - windowHeight) {
+            footer.style.display = 'block';
+        } else {
+            footer.style.display = 'none';
+        }
+    });
+</script>
 
 </body>
 </html>
